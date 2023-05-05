@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          var lista = [1,3,5,7,9]
+        var numerosImpares = []
+
+        for(var item = 0; item < lista.length; item++) {
+            var restoDivisao = lista[item] % 2
+
+            if(restoDivisao == 0) {
+                numerosImpares.push(lista[item])
+            }
+        }
+
+        if(lista.length == numerosImpares.length) {
+            console.log("Todos são impares")
+        } else {
+            console.log("Algum são pares")
+        }
+    </script>
+</body>
+</html>
